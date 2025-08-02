@@ -2,16 +2,18 @@
 
 ### 🧾 1. Usuario crea una apuesta
 
-- **Apuestas** → `POST /apuestas` (recibe ID de partida y de usuario)
+- **Apuestas** → `POST /apuestas` _(owner: rowmi)_  
+  (recibe ID de partida y de usuario)
+
 - Llama internamente a:
-  - `GET /usuarios/{id}` → para validar usuario
-  - `GET /partidas/{id}` → para validar que la partida existe
+  - `GET /usuarios/{id}` _(owner: alpeta)_ → para validar usuario
+  - `GET /partidas/{id}` _(owner: adri)_ → para validar que la partida existe
 
 ---
 
 ### 🏁 2. Partida finaliza
 
-- **Partidas** → `PUT /partidas/{id}/resultado`
+- **Partidas** → `PUT /partidas/{id}/resultado` _(owner: adri)_
 - Publica en cola: `resultado-partida`
 
 ---
@@ -29,4 +31,4 @@
 ### 💰 4. Usuarios actualiza saldo
 
 - Escucha la cola `monedas-actualizadas`
-- Realiza `PUT /usuarios/monedas` para actualizar monedas del usuario
+- Realiza `PUT /usuarios/monedas` _(owner: alpeta)_ para actualizar monedas del usuario
