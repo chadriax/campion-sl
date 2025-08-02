@@ -1,4 +1,4 @@
-package com.app.campionSL_matches;
+package com.app.campionsl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
