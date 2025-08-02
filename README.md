@@ -32,3 +32,10 @@
 
 - Escucha la cola `monedas-actualizadas`
 - Realiza `PUT /usuarios/monedas` _(owner: alpeta)_ para actualizar monedas del usuario
+
+
+### Puertos microservicios
+
+- Apuestas (Rowmi)  8080
+- Usuarios (Alpeta)  8081
+- Partidas (Rowmi)  8082
