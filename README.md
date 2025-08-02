@@ -36,6 +36,6 @@
 
 ### Puertos microservicios
 
-- Apuestas (Rowmi)  8080
 - Usuarios (Alpeta)  8081
-- Partidas (Rowmi)  8082
+- Partidas (Adri)  8082
+- Apuestas (Rowmi)  8083
